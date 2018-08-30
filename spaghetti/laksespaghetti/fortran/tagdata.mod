@@ -1,0 +1,289 @@
+GFORTRAN module created from tagdata.f90 on Wed Nov 11 08:11:04 2009
+If you edit this, you'll get what you deserve.
+
+(() () (2 3 4) (5 6 7 8) () () () () () () () () (
+9) (10) (11) (12) (13) (14) () (15 16 17 18 19 20 21 22) ())
+
+()
+
+(('add_days' '' 2 3 4))
+
+()
+
+()
+
+(3 'add_days_double' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL FUNCTION PURE) (DERIVED 23 ()) 24 0 (25 26) () 27 () ())
+4 'add_days_real' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION PURE) (DERIVED 23 ()) 28 0 (29 30) () 31 () ())
+32 'backward_outfile_name' 'setup' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '80'))) 0
+0 () () 0 () ())
+33 'add_seconds' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION PURE) (DERIVED 23 ()) 34 0 (35 36) () 37 () ())
+2 'add_days_int' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION PURE) (DERIVED 23 ()) 38 0 (39 40) () 41 () ())
+18 'double2time' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 42 0 (43 44) () 0 () ())
+45 'datestr' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '10'))) 46 0 (47) ()
+45 () ())
+48 'clockstr' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '8'))) 49 0 (50)
+() 48 () ())
+9 'eqtime' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (LOGICAL 4 ()) 51 0 (52 53) () 9 () ())
+12 'getime' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (LOGICAL 4 ()) 54 0 (55 56) () 12 () ())
+57 'gregoriandate' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL SUBROUTINE) (UNKNOWN 0 ()) 58 0 (59 60 61 62) () 0 () ())
+16 'int2time' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 63 0 (64 65) () 0 () ())
+66 'lat0' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+REAL 4 ()) 0 0 () () 0 () ())
+67 'julianday' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 68 0 (69 70 71 72) () 0 () ())
+14 'letime' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (LOGICAL 4 ()) 73 0 (74 75) () 14 () ())
+76 'lat1' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+REAL 4 ()) 0 0 () () 0 () ())
+11 'gttime' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (LOGICAL 4 ()) 77 0 (78 79) () 11 () ())
+80 'forward_outfile_name' 'setup' 1 ((VARIABLE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '80'))) 0
+0 () () 0 () ())
+81 'dt' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (REAL
+4 ()) 0 0 () () 0 () ())
+13 'lttime' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (LOGICAL 4 ()) 82 0 (83 84) () 13 () ())
+85 'nobs' 'tagdata' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+INTEGER 4 ()) 0 0 () () 0 () ())
+10 'netime' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION) (LOGICAL 4 ()) 86 0 (87 88) () 10 () ())
+89 'nstep' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+INTEGER 4 ()) 0 0 () () 0 () ())
+90 'read_tag' 'tagdata' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+SUBROUTINE) (UNKNOWN 0 ()) 0 0 () () 0 () ())
+91 'readsup' 'setup' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+SUBROUTINE) (UNKNOWN 0 ()) 0 0 () () 0 () ())
+92 'readln' 'setup' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+SUBROUTINE) (UNKNOWN 0 ()) 93 0 (94) () 0 () ())
+95 'outper' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+INTEGER 4 ()) 0 0 () () 0 () ())
+96 'lon1' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+REAL 4 ()) 0 0 () () 0 () ())
+97 'lon0' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+REAL 4 ()) 0 0 () () 0 () ())
+98 'setup' 'setup' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN) (
+UNKNOWN 0 ()) 0 0 () () 0 () ())
+99 'start_time' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(DERIVED 23 ()) 0 0 () () 0 () ())
+100 'simdays' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(INTEGER 4 ()) 0 0 () () 0 () ())
+101 'str2vec' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 102 0 (103 104) () 0 () ())
+6 'sub_days_double' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL FUNCTION) (DERIVED 23 ()) 105 0 (106 107) () 6 () ())
+22 'str2time' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 108 0 (109 110) () 0 () ())
+111 'stop_time' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(DERIVED 23 ()) 0 0 () () 0 () ())
+112 'tag_date' 'tagdata' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN ALLOCATABLE DIMENSION) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0
+'10'))) 0 0 () (1 DEFERRED () ()) 0 () ())
+7 'sub_days_real' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION) (DERIVED 23 ()) 113 0 (114 115) () 7 () ())
+116 'tag_temp' 'tagdata' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 ()) 0 0 () (1 DEFERRED () ()) 0 ()
+())
+117 'tagdata' 'tagdata' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(UNKNOWN 0 ()) 0 0 () () 0 () ())
+118 'tag_file_name' 'setup' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '80'))) 0 0 () () 0 ()
+())
+21 'time2str' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 119 0 (120 121) () 0 () ())
+122 'time_module' 'time_module' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (UNKNOWN 0 ()) 0 0 () () 0 () ())
+23 'time_type' 'time_module' 1 ((DERIVED UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (UNKNOWN 0 ()) 0 0 () () 0 ((123 'day' (INTEGER 4 ()) () 0 0 ())
+(124 'sec' (INTEGER 4 ()) () 0 0 ())) PUBLIC ())
+125 'timediff_sec' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL FUNCTION PURE) (INTEGER 4 ()) 126 0 (127 128) () 125 ()
+())
+8 'timediff' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+FUNCTION PURE) (REAL 4 ()) 129 0 (130 131) () 8 () ())
+19 'time2vec' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 132 0 (133 134) () 0 () ())
+15 'time2num' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 135 0 (136 137) () 0 () ())
+138 'tag_depth' 'tagdata' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN ALLOCATABLE DIMENSION) (REAL 4 ()) 0 0 () (1 DEFERRED () ()) 0 ()
+())
+5 'sub_days_int' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION) (DERIVED 23 ()) 139 0 (140 141) () 5 () ())
+20 'vec2time' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 142 0 (143 144) () 0 () ())
+145 'weekday' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION) (INTEGER 4 ()) 146 0 (147) () 145 () ())
+148 'vec2str' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 149 0 (150 151) () 0 () ())
+152 'timestr' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL FUNCTION) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '19'))) 153 0 (
+154) () 152 () ())
+17 'real2time' 'time_module' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 155 0 (156 157) () 0 () ())
+30 't' '' 28 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0 ()
+() 0 () ())
+31 'time2' '' 28 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN RESULT)
+(DERIVED 23 ()) 0 0 () () 0 () ())
+35 'time' '' 34 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+47 'time' '' 46 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+29 'time' '' 28 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+40 't' '' 38 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+41 'time2' '' 38 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN RESULT)
+(DERIVED 23 ()) 0 0 () () 0 () ())
+39 'time' '' 38 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+36 't' '' 34 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+27 'time2' '' 24 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN RESULT)
+(DERIVED 23 ()) 0 0 () () 0 () ())
+26 't' '' 24 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 8 ()) 0 0 ()
+() 0 () ())
+25 'time' '' 24 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+43 'time' '' 42 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+44 'datenum' '' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 8 ())
+0 0 () () 0 () ())
+53 'time2' '' 51 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+62 'd' '' 58 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+60 'y' '' 58 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+61 'm' '' 58 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+59 'jd' '' 58 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+78 'time1' '' 77 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+69 'y' '' 68 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+65 'datenum' '' 63 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4
+()) 0 0 () () 0 () ())
+79 'time2' '' 77 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+71 'd' '' 68 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+74 'time1' '' 73 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+70 'm' '' 68 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ()) 0
+0 () () 0 () ())
+75 'time2' '' 73 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+72 'jd' '' 68 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ())
+0 0 () () 0 () ())
+52 'time1' '' 51 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+37 'time2' '' 34 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN RESULT)
+(DERIVED 23 ()) 0 0 () () 0 () ())
+109 'time' '' 108 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+110 'datestr' '' 108 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (
+CHARACTER 1 (())) 0 0 () () 0 () ())
+83 'time1' '' 82 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+64 'time' '' 63 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+157 'datenum' '' 155 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ())
+0 0 () () 0 () ())
+140 'time' '' 139 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+141 't' '' 139 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ())
+0 0 () () 0 () ())
+121 'time' '' 119 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+107 't' '' 105 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 8 ()) 0 0
+() () 0 () ())
+106 'time' '' 105 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+94 'line' '' 93 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (CHARACTER 1
+(())) 0 0 () () 0 () ())
+84 'time2' '' 82 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+120 'timestr' '' 119 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (
+CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '19'))) 0 0 () () 0 () ())
+50 'time' '' 49 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+137 'time' '' 135 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+114 'time' '' 113 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+136 'datenum' '' 135 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (REAL 8
+()) 0 0 () () 0 () ())
+115 't' '' 113 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0
+() () 0 () ())
+134 'time' '' 132 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+154 'time' '' 153 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+151 'datevec' '' 149 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DIMENSION DUMMY)
+(INTEGER 4 ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '6')) 0 () ())
+143 'time' '' 142 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+144 'datevec' '' 142 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DIMENSION DUMMY)
+(INTEGER 4 ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '6')) 0 () ())
+150 'datestr' '' 149 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (
+CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '19'))) 0 0 () () 0 () ())
+128 'time2' '' 126 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+130 'time1' '' 129 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+87 'time1' '' 86 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+88 'time2' '' 86 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+131 'time2' '' 129 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+133 'datevec' '' 132 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DIMENSION DUMMY)
+(INTEGER 4 ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '6')) 0 () ())
+127 'time1' '' 126 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+55 'time1' '' 54 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+103 'datevec' '' 102 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DIMENSION DUMMY)
+(INTEGER 4 ()) 0 0 () (1 EXPLICIT (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '6')) 0 () ())
+104 'datestr' '' 102 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (
+CHARACTER 1 (())) 0 0 () () 0 () ())
+156 'time' '' 155 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+56 'time2' '' 54 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23 ())
+0 0 () () 0 () ())
+147 'time' '' 146 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (DERIVED 23
+()) 0 0 () () 0 () ())
+)
+
+('real2time' 0 17 'lon0' 0 97 'dt' 0 81 'clockstr' 0 48 'add_days_int' 0
+2 'add_days_double' 0 3 'add_seconds' 0 33 'add_days_real' 0 4
+'backward_outfile_name' 0 32 'datestr' 0 45 'double2time' 0 18
+'forward_outfile_name' 0 80 'eqtime' 0 9 'gttime' 0 11 'gregoriandate' 0
+57 'getime' 0 12 'lat1' 0 76 'julianday' 0 67 'int2time' 0 16 'lat0' 0
+66 'letime' 0 14 'lon1' 0 96 'outper' 0 95 'nstep' 0 89 'netime' 0 10
+'lttime' 0 13 'nobs' 0 85 'readln' 0 92 'read_tag' 0 90 'readsup' 0 91
+'timestr' 0 152 'sub_days_int' 0 5 'stop_time' 0 111 'simdays' 0 100
+'setup' 0 98 'start_time' 0 99 'str2time' 0 22 'sub_days_double' 0 6
+'str2vec' 0 101 'tag_depth' 0 138 'sub_days_real' 0 7 'tag_date' 0 112
+'time2num' 0 15 'tag_file_name' 0 118 'tagdata' 0 117 'tag_temp' 0 116
+'time2vec' 0 19 'time2str' 0 21 'timediff' 0 8 'time_type' 0 23
+'time_module' 0 122 'timediff_sec' 0 125 'vec2str' 0 148 'weekday' 0 145
+'vec2time' 0 20)

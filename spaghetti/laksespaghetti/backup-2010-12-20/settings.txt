@@ -1,0 +1,12 @@
+Modell settings
+---------------
+
+a   1.2
+H0  30   m
+
+second chance 1.1 and 20
+
+temperature tolerance 1.2 degC
+
+ramdom speed   1.5  m/s
+max deterministic speed 0.9 m/s

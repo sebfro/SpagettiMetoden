@@ -1,0 +1,22 @@
+2010-10-15
+
+Figure mergeA.png shows a random selection of 200 tracks from a total
+of 21556 merged tracks from the standard run. The red curve gives the
+average of all tracks, with white disks indicating 10 days
+intervalls. For the first 60 days the mean track heads northwards, than
+turns weakly southwards for 40 days before turning northwards again.
+When reaching the 400 m isobaths it turns more towards northeast along
+the southern flank of the Bear Island Trench. 
+
+Comparing with the tag data in figure tag83101_smooth.png, we see some
+deep dives at the end of July, after approx. 60 days. This explains
+the rapid northward movement initially, the tracks has to reach deep
+water fast enough. Towards the end of August and first half of
+September the dives are shallower and the temperature high, allowing
+(or forcing?) the tracks southwards. From the end of September there
+are several deep dives forcing the tracks north again to the Bear
+Island Trench.  The cooling in this period and the need to reach the
+pop-up location forces the tracks towards north-east.
+
+[**Need to check the story more clearly, print out dates along the
+track and compare directly with tag data and temperatures**]

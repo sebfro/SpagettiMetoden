@@ -1,0 +1,75 @@
+# -*- coding: utf-8 -*-
+
+from pylab import *
+from netCDF4 import Dataset
+
+
+f = Dataset('merged.nc')
+
+# No temperature
+
+N = 53    # temp
+N = 242   # notemp
+
+#N = 5184
+#N = 1113
+
+Nplot = 500
+
+#N = f.nTrack[0]+1
+#Nplot = min(100,N)
+X = f.variables['X'][:,:N]
+Y = f.variables['Y'][:,:N]
+
+
+print N
+#print X.shape
+
+f.close()
+
+
+print 'X-range = ', min(ravel(X)), max(ravel(X))
+print 'Y-range = ', min(ravel(Y)), max(ravel(Y))
+
+# Start position
+# 106
+xstart = 12.22
+ystart = 67.32
+xstop  = 23.22
+ystop  = 71.09
+
+x0 = 14.0
+x1 = 30.0
+y0 = 68.0
+y1 = 77.0
+
+
+
+
+
+#npaths = min(100,N)
+#npaths = 10
+
+clf()
+
+for i in xrange(Nplot):
+    plot(X[:,i], Y[:,i],'b')
+
+
+
+# Finn middelbane
+Xm = sum(X, axis=1)/N
+Ym = sum(Y, axis=1)/N
+
+
+plot(Xm, Ym, color='k')
+        
+
+
+
+
+axis([10,33,69, 75])
+
+show()
+savefig('a.pdf')
+

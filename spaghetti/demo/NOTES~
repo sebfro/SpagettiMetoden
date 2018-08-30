@@ -1,0 +1,13 @@
+0) Compile the Fortran program spaghetti
+   Using gfortran
+   Problem: can not find shared netcdf library
+   Solution: export LD_LIBRARY_PATH=/usr/local/lib
+
+1) Run the spaghetti program in the demo directory
+
+2) Merge backwards and forwards trajectories
+   python merge.py
+
+3) Plot results 
+   python plotbane235_mpl.py
+   Uses matplotlib library for python

@@ -1,0 +1,7 @@
+program b
+
+  include 'netcdf.inc'
+
+  
+
+end program b

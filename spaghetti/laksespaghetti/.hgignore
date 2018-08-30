@@ -1,0 +1,25 @@
+syntax: glob
+
+# Backup files left behind by the Emacs editor.
+*~
+
+# Byte-compiled python files
+*.pyc
+
+# NetCDF files
+*.nc
+
+# Ignore image files from matplotlib
+*png
+*jpg
+*pdf
+*gif
+
+# Latex stuff
+*.aux
+*.log
+
+# Object files and Fortran module files
+*.o
+*.mod
+

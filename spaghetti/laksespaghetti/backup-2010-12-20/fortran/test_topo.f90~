@@ -1,0 +1,9 @@
+! Test of topo module
+! Compile with 
+! gfortran sst.o time_module.o test_sst.f90 \ 
+!    -L/usr/local/lib -lnetcdff -lnetcdf -lhdf5_hl -lhdf5
+! ------------------------------
+
+program test_sst
+
+  use sst_module

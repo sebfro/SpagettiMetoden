@@ -1,0 +1,60 @@
+Figure XX shows displays the distribution of merged tracks at a given
+day as standard deviation ellipses (Ebdon, 1986). These ellipses are
+centered at the centroid of the distribution and rotated such that
+the ellipsis axes agrees with the principal axes of the
+distribution. The length of the axes are one standard deviation in
+that direction. The ellipses are stretched to fit the map
+projection. 
+
+The dates start at the end of August, in the phase of backwards
+trajectories. All distributions show larger east-west extent then
+north-south, indication that the longitude is more uncertain than the
+latitude. The first three are close in time and quite similar in the
+southern Barents Sea. At this time, in the first half of the
+September, the tag shows high temperatures and relative shallow dives
+(fig. tag83101_smooth.png). The three next panels are from October,
+the period with the deepest dives and colder surface temperature. The
+tracks are therefore found in the deeper Bear Island Trench.
+
+The dates of the frames are determined by the presence of reasonably
+good geolocations by light. These independent measurements are
+indicated by a red circle. In most of the frames the geolocation are
+within or close to the standard deviation ellipsis, indicating that
+the model tracks are doing a good job. In frame two the geolocation is
+at 65 degrees north, outside the map. This must be an error.
+(***Cesar, have you corrected this). In frame three the location is
+back at the Norwegian coast. This looks unrealistic, but can not be
+ruled out. Frame four is bang on. In the last frame, most of the
+tracks are still in the deeper part of the trench giving a centroid
+approximately two standard deviations too far west. This is consistent
+with deep dives to 324 m 20th October and 394 m the 23rd, preventing most
+tracks from going further east. However, there are tracks
+close to the geolocation, contributing to the elongated shape of the
+ellipsis pointing towards the geolocation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ref:
+
+David Ebdon, Statistics in geography, 2nd ed., 1985, Blackwell
+Publishing.

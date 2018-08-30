@@ -1,0 +1,65 @@
+! -----------------------------------------------
+! Setup-file for spaghetti 
+!
+! Bjørn Ådlandsvik  <bjorn@imr.no>
+! Institute of Marine Research
+! 15 September 2004
+! 
+! ----------------------------------------------------
+!
+! --------------
+!    RELEASE
+! --------------
+
+! start time (ccyy-mm-dd hh:mm:ss)
+!2003-08-30 12:00:00
+1996-03-16 21:00:00
+
+! start position 
+! lon:
+25.358
+
+! lat:
+71.345
+
+! ------------------
+!    CAPTURE
+! ------------------
+!
+! end time (ccyy-mm-dd hh:mm:ss)
+!
+!2004-03-12 12:00:00
+1996-06-15 21:00:00
+
+! end position  # Kunstig nær Bjørnya
+! lon: 
+17.60
+
+! lat:
+74.10
+
+! -----------------
+!    FILES 
+! ----------------
+! tag data file
+B235.dat
+
+! output from forward simulation
+A235FW.nc
+
+! output from backwards simulation
+A235BW.nc
+
+
+
+! ------------------
+!   TIMING 
+! -----------------
+
+! input time step [minutes]
+120
+
+! output frequency,
+! 24 h = 24 * 12 = 288
+12
+

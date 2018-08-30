@@ -1,0 +1,14 @@
+Files terminateFW.dat and terminateBW.dat
+
+Columns:
+
+1: Timestep [hours]
+2: Particle ID
+3: Longitude
+4: Latitude
+5: T from tag 
+6: SST
+7: H from tag
+8: H from topo
+9: Deterministic speed  [m/s]
+

@@ -1,0 +1,5 @@
+Yearly files are available in the sub-directory YEARLY_FILES.  
+Each is a simple 'cat' of all weekly files for that year.  
+
+The sample code for the weekly files will work for the yearly
+files if you add a couple of lines to loop through for each week.

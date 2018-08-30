@@ -1,0 +1,782 @@
+GFORTRAN module created from tempatlas.f90 on Tue Jun 16 10:18:37 2009
+If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () ()
+() ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'ddepth' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.5000000@1') () 0
+() ())
+3 '__convert_r4_r8' '(intrinsic)' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN INTRINSIC FUNCTION ELEMENTAL PURE) (REAL 8 ()) 0 0
+() () 0 () ())
+4 'dlat' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.3333334@0') () 0 () ())
+5 'dlon' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.8000000@0') () 0 () ())
+6 'depth0' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.0000000@0') () 0 () ())
+7 'fildoub' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (REAL 8 ()) 0 0 () (CONSTANT (REAL 8 ()) 0 '0.78000000000000@31')
+() 0 () ())
+8 'filfloat' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.7800000@31') () 0
+() ())
+9 'filchar' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+10 'fillong' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-2147483647')
+() 0 () ())
+11 'init_atlas' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 0 0 () () 0 () ())
+12 'lon0' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.6000000@1') () 0 () ())
+13 'lat0' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.4400000@2') () 0 () ())
+14 'maxncdim' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1024') () 0 ()
+())
+15 'maxncatt' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '8192') () 0 ()
+())
+16 'maxncvar' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '8192') () 0 ()
+())
+17 'maxncop' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '64') () 0 ()
+())
+18 'ncchar' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2') () 0 () ())
+19 'ncclob' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+20 'ncbyte' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+21 'nccreat' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2') () 0 () ())
+22 'nccre' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+23 'maxvdims' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1024') () 0 ()
+())
+24 'maxncnam' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '256') () 0 ()
+())
+25 'ncdid' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+26 'ncdouble' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '6') () 0 () ())
+27 'ncebadid' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-33') () 0 ()
+())
+28 'ncebadd' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-46') () 0 ()
+())
+29 'ncecoord' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-40') () 0 ()
+())
+30 'ncebadty' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-45') () 0 ()
+())
+31 'nceindef' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-39') () 0 ()
+())
+32 'nceinval' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-36') () 0 ()
+())
+33 'nceglob' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-50') () 0 ()
+())
+34 'nceexist' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-35') () 0 ()
+())
+35 'ncemaxat' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-44') () 0 ()
+())
+36 'ncddef' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+37 'filshort' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-32767') () 0
+() ())
+38 'ncemaxvs' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-48') () 0 ()
+())
+39 'ncemaxds' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-41') () 0 ()
+())
+40 'ncenfile' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-31') () 0 ()
+())
+41 'ncenotnc' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-51') () 0 ()
+())
+42 'ncenotin' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-38') () 0 ()
+())
+43 'ncenoatt' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-43') () 0 ()
+())
+44 'ncentool' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-53') () 0 ()
+())
+45 'nceperm' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-37') () 0 ()
+())
+46 'ncests' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-52') () 0 ()
+())
+47 'ncexcl' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '4') () 0 () ())
+48 'nceunlim' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-47') () 0 ()
+())
+49 'ncenotvr' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-49') () 0 ()
+())
+50 'ncename' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-42') () 0 ()
+())
+51 'ncfloat' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '5') () 0 () ())
+52 'ncfill' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+53 'ncindef' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '8') () 0 () ())
+54 'nchsync' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '32') () 0 ()
+())
+55 'nchdirty' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '128') () 0 ()
+())
+56 'ncglobal' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+57 'nclong' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '4') () 0 () ())
+58 'nclink' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '32768') () 0
+() ())
+59 'ncfoobar' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '32') () 0 ()
+())
+60 'ncnoclob' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '4') () 0 () ())
+61 'ncnowrit' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+62 'ncopn' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+63 'ncnsync' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '16') () 0 ()
+())
+64 'ncnofill' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '256') () 0 ()
+())
+65 'ncsfil' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+66 'ncrdwr' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+67 'ncnoerr' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+68 'ncndirty' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '64') () 0 ()
+())
+69 'ncsyserr' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-31') () 0 ()
+())
+70 'nctlen' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+71 'ncunlim' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+72 'ncverbos' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2') () 0 () ())
+73 'ncvid' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+74 'nf_64bit_offset' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'512') () 0 () ())
+75 'ndepth' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '101') () 0 ()
+())
+76 'ncwrite' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+77 'ncvdef' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+78 'nf__create_mp' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+79 'nf__create' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+80 'ncshort' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '3') () 0 () ())
+81 'nf__open' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+82 'nf_abort' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+83 'nf_char' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2') () 0 () ())
+84 'nf_byte' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+85 'nf_clobber' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+86 'nf_align_chunk' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'-1') () 0 () ())
+87 'nf__open_mp' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+88 'nf_copy_var' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+89 'nf_copy_att' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+90 'nf_def_dim' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+91 'nf_def_var' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+92 'nf_delete' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+93 'nf_double' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '6') () 0 () ())
+94 'nf_ebaddim' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-46') () 0 ()
+())
+95 'nf_del_att' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+96 'nf_create' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+97 'nf_ebadname' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-59') () 0 ()
+())
+98 'nf_ebadtype' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-45') () 0 ()
+())
+99 'nf_eedge' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-57') () 0 ()
+())
+100 'nf_edimsize' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-63') () 0 ()
+())
+101 'nf_echar' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-56') () 0 ()
+())
+102 'nf_eglobal' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-50') () 0 ()
+())
+103 'nf_eexist' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-35') () 0 ()
+())
+104 'nf_eindefine' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-39') () 0 ()
+())
+105 'nf_einvalcoords' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'-40') () 0 () ())
+106 'nf_emaxatts' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-44') () 0 ()
+())
+107 'nf_emaxdims' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-41') () 0 ()
+())
+108 'nf_einval' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-36') () 0 ()
+())
+109 'nf_emaxvars' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-48') () 0 ()
+())
+110 'nf_enddef' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+111 'nf_enorecvars' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'-55') () 0 () ())
+112 'nf_enomem' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-61') () 0 ()
+())
+113 'nf_enameinuse' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'-42') () 0 () ())
+114 'nf_enotatt' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-43') () 0 ()
+())
+115 'nf_enotvar' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-49') () 0 ()
+())
+116 'nf_erange' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-60') () 0 ()
+())
+117 'nf_ests' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-52') () 0 ()
+())
+118 'nf_estride' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-58') () 0 ()
+())
+119 'nf_eperm' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-37') () 0 ()
+())
+120 'nf_enotnc' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-51') () 0 ()
+())
+121 'nf_enotindefine' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'-38') () 0 () ())
+122 'nf_eunlimpos' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-47') () 0 ()
+())
+123 'nf_evarsize' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-62') () 0 ()
+())
+124 'nf_eunlimit' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-54') () 0 ()
+())
+125 'nf_fill' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+126 'nf_fatal' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+127 'nf_fill_char' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+128 'nf_fill_byte' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-127') () 0 ()
+())
+129 'nf_etrunc' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-64') () 0 ()
+())
+130 'nf_fill_float' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0
+'0.7800000@31') () 0 () ())
+131 'nf_fill_real' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (REAL 4 ()) 0 0 () (CONSTANT (REAL 4 ()) 0 '0.7800000@31') () 0
+() ())
+132 'nf_fill_int2' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-32767') () 0
+() ())
+133 'nf_fill_int1' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-127') () 0 ()
+())
+134 'nf_float' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '5') () 0 () ())
+135 'nf_fill_short' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'-32767') () 0 () ())
+136 'nf_format_classic' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1')
+() 0 () ())
+137 'nf_format_64bit' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2')
+() 0 () ())
+138 'nf_get_att_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+139 'nf_get_att_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+140 'nf_fill_int' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-2147483647')
+() 0 () ())
+141 'nf_fill_double' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (REAL 8 ()) 0 0 () (CONSTANT (REAL 8 ()) 0
+'0.78000000000000@31') () 0 () ())
+142 'nf_get_att_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+143 'nf_get_var1_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+144 'nf_get_att_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+145 'nf_get_att_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+146 'nf_get_att_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+147 'nf_get_var1_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+148 'nf_get_var_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+149 'nf_get_var_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+150 'nf_get_var_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+EXTERNAL-PROC UNKNOWN EXTERNAL FUNCTION) (INTEGER 4 ()) 0 0 () () 150 ()
+())
+151 'nf_get_var_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+152 'nf_get_var_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+153 'nf_get_var1_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+154 'nf_get_var_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+155 'nf_get_var1_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+156 'nf_get_vara_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+157 'nf_get_vara_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+158 'nf_get_vara_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+159 'nf_get_vara_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+160 'nf_get_vara_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+161 'nf_get_varm_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+162 'nf_get_varm_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+163 'nf_get_varm_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+164 'nf_get_vars_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+165 'nf_get_vars_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+166 'nf_get_varm_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+167 'nf_get_vars_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+168 'nf_get_vars_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+169 'nf_get_varm_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+170 'nf_get_varm_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+171 'nf_get_vars_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+172 'nf_global' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+173 'nf_get_vars_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+174 'nf_get_vara_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+175 'nf_get_var1_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+176 'nf_get_var1_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+177 'nf_emaxname' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-53') () 0 ()
+())
+178 'nf_ebadid' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-33') () 0 ()
+())
+179 'nf_inq_attid' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+180 'nf_inq_att' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+181 'nf_inq_atttype' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+182 'nf_inq_dim' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+183 'nf_inq_base_pe' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+184 'nf_inq_attname' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+185 'nf_inq_attlen' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+186 'nf_inq' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+187 'nf_close' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT EXTERNAL-PROC
+UNKNOWN EXTERNAL FUNCTION) (INTEGER 4 ()) 0 0 () () 187 () ())
+188 'nf__enddef' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+189 'ncfatal' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+190 'filbyte' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '-127') () 0 ()
+())
+191 'nf_inq_format' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+192 'nf_inq_libvers' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0
+'80'))) 0 0 () () 0 () ())
+193 'nf_inq_ndims' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+194 'nf_inq_unlimdim' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+195 'nf_inq_var' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+196 'nf_inq_nvars' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+197 'nf_inq_varid' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+EXTERNAL-PROC UNKNOWN EXTERNAL FUNCTION) (INTEGER 4 ()) 0 0 () () 197 ()
+())
+198 'nf_inq_varname' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+199 'nf_inq_vardimid' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+200 'nf_inq_natts' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+201 'nf_inq_varnatts' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+202 'nf_inq_dimname' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+203 'nf_inq_dimlen' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+204 'nf_int1' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+205 'nf_int' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '4') () 0 () ())
+206 'nf_max_attrs' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '8192') () 0 ()
+())
+207 'nf_lock' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1024') () 0 ()
+())
+208 'nf_issyserr' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (LOGICAL 4 ()) 0 0 () () 0 () ())
+209 'nf_max_var_dims' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0
+'1024') () 0 () ())
+210 'nf_noclobber' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '4') () 0 () ())
+211 'nf_max_vars' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '8192') () 0 ()
+())
+212 'nf_max_name' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '256') () 0 ()
+())
+213 'nf_noerr' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+214 'nf_max_dims' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1024') () 0 ()
+())
+215 'nf_int2' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '3') () 0 () ())
+216 'nf_put_att_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+217 'nf_open' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT EXTERNAL-PROC
+UNKNOWN EXTERNAL FUNCTION) (INTEGER 4 ()) 0 0 () () 217 () ())
+218 'nf_put_att_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+219 'nf_put_att_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+220 'nf_put_att_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+221 'nf_put_att_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+222 'nf_put_att_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+223 'nf_nowrite' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+224 'nf_put_var1_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+225 'nf_put_var1_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+226 'nf_put_var_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+227 'nf_put_var_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+228 'nf_put_var1_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+229 'nf_put_var_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+230 'nf_put_var_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+231 'nf_put_var1_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+232 'nf_put_vara_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+233 'nf_put_vara_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+234 'nf_put_vara_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+235 'nf_put_vara_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+236 'nf_put_vara_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+237 'nf_put_var_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+238 'nf_put_var_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+239 'nf_put_var1_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+240 'nf_put_varm_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+241 'nf_put_vara_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+242 'nf_put_var1_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+243 'nf_nofill' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '256') () 0 ()
+())
+244 'nf_inq_vartype' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+245 'nf_put_varm_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+246 'nf_put_vars_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+247 'nf_put_vars_double' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+248 'nf_put_varm_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+249 'nf_put_varm_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+250 'nf_put_varm_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+251 'nf_put_varm_int' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+252 'nf_put_vars_int2' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+253 'nf_put_vars_text' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+254 'nf_put_vars_real' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+255 'nf_put_vars_int1' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+256 'nf_inq_varndims' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+257 'nf_inq_dimid' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+258 'nf_rename_att' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+259 'nf_redef' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+260 'nf_real' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '5') () 0 () ())
+261 'nf_rename_var' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+262 'nf_set_default_format' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+263 'nf_set_fill' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+264 'nf_short' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '3') () 0 () ())
+265 'nf_share' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2048') () 0 ()
+())
+266 'nf_set_base_pe' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+267 'nf_strerror' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (CHARACTER 1 ((CONSTANT (INTEGER 4 ()) 0 '80'))) 0 0 ()
+() 0 () ())
+268 'nf_unlimited' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0') () 0 () ())
+269 'nf_sync' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+270 'nlat' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '66') () 0 () ())
+271 'nf_write' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '1') () 0 () ())
+272 'nf_verbose' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '2') () 0 () ())
+273 'ntimes' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '4') () 0 () ())
+274 'nlon' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN)
+(INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '129') () 0 () ())
+275 'tempatlas' 'tempatlas' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN) (UNKNOWN 0 ()) 0 0 () () 0 () ())
+276 'xy2ll' 'grid' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+SUBROUTINE) (UNKNOWN 0 ()) 277 0 (278 279 280 281) () 0 () ())
+282 'tstd' 'tempatlas' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+DIMENSION) (REAL 4 ()) 0 0 () (4 EXPLICIT (CONSTANT (INTEGER 4 ()) 0 '1')
+(CONSTANT (INTEGER 4 ()) 0 '129') (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '66') (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '101') (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '4')) 0 () ())
+283 'temp' 'tempatlas' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+DIMENSION) (REAL 4 ()) 0 0 () (4 EXPLICIT (CONSTANT (INTEGER 4 ()) 0 '1')
+(CONSTANT (INTEGER 4 ()) 0 '129') (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '66') (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '101') (CONSTANT (INTEGER 4 ()) 0 '1') (
+CONSTANT (INTEGER 4 ()) 0 '4')) 0 () ())
+284 'sample_atlas' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL SUBROUTINE) (UNKNOWN 0 ()) 285 0 (286 287 288 289 290 291) () 0 ()
+())
+292 'nf_sizehint_default' 'tempatlas' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN) (INTEGER 4 ()) 0 0 () (CONSTANT (INTEGER 4 ()) 0 '0')
+() 0 () ())
+293 'nf_rename_dim' 'tempatlas' 1 ((PROCEDURE UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN EXTERNAL) (INTEGER 4 ()) 0 0 () () 0 () ())
+279 'y' '' 277 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0
+() () 0 () ())
+278 'x' '' 277 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0
+() () 0 () ())
+281 'lat' '' 277 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ())
+0 0 () () 0 () ())
+280 'lon' '' 277 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ())
+0 0 () () 0 () ())
+287 'y' '' 285 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0
+() () 0 () ())
+286 'x' '' 285 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0
+() () 0 () ())
+290 'atemp' '' 285 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ())
+0 0 () () 0 () ())
+291 'astd' '' 285 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ())
+0 0 () () 0 () ())
+289 't' '' 285 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (INTEGER 4 ())
+0 0 () () 0 () ())
+288 'z' '' 285 ((VARIABLE IN UNKNOWN-PROC UNKNOWN DUMMY) (REAL 4 ()) 0 0
+() () 0 () ())
+)
+
+('nf_rename_dim' 0 293 'nf_real' 0 260 'nf_inq_dimid' 0 257 'filbyte' 0
+190 'depth0' 0 6 '__convert_r4_r8' 0 3 'ddepth' 0 2 'dlon' 0 5 'dlat' 0
+4 'ncfatal' 0 189 'ncename' 0 50 'ncemaxds' 0 39 'filshort' 0 37 'fillong'
+0 10 'filchar' 0 9 'filfloat' 0 8 'fildoub' 0 7 'ncddef' 0 36 'maxncnam'
+0 24 'maxncatt' 0 15 'lat0' 0 13 'init_atlas' 0 11 'lon0' 0 12 'maxncdim'
+0 14 'maxvdims' 0 23 'maxncop' 0 17 'maxncvar' 0 16 'nccre' 0 22 'ncbyte'
+0 20 'ncclob' 0 19 'ncchar' 0 18 'nccreat' 0 21 'ncemaxat' 0 35 'nceexist'
+0 34 'ncebadty' 0 30 'ncebadd' 0 28 'ncdouble' 0 26 'ncdid' 0 25
+'ncebadid' 0 27 'ncecoord' 0 29 'nceglob' 0 33 'nceinval' 0 32 'nceindef'
+0 31 'ncemaxvs' 0 38 'ncenotvr' 0 49 'ncenoatt' 0 43 'ncenfile' 0 40
+'ncenotin' 0 42 'ncenotnc' 0 41 'nceunlim' 0 48 'ncests' 0 46 'nceperm'
+0 45 'ncentool' 0 44 'ncexcl' 0 47 'nf__enddef' 0 188 'ncshort' 0 80
+'ncndirty' 0 68 'ncfoobar' 0 59 'ncfill' 0 52 'ncfloat' 0 51 'nclink' 0
+58 'ncglobal' 0 56 'nchdirty' 0 55 'nchsync' 0 54 'ncindef' 0 53 'nclong'
+0 57 'ncnoerr' 0 67 'ncnoclob' 0 60 'ncrdwr' 0 66 'ncnofill' 0 64
+'ncnsync' 0 63 'ncnowrit' 0 61 'ncopn' 0 62 'ncsfil' 0 65 'nf__create' 0
+79 'ncvdef' 0 77 'ncunlim' 0 71 'nctlen' 0 70 'ncsyserr' 0 69 'ncwrite'
+0 76 'ncvid' 0 73 'ncverbos' 0 72 'ndepth' 0 75 'nf_64bit_offset' 0 74
+'nf__create_mp' 0 78 'nf_close' 0 187 'nf__open_mp' 0 87 'nf__open' 0 81
+'nf_align_chunk' 0 86 'nf_abort' 0 82 'nf_clobber' 0 85 'nf_byte' 0 84
+'nf_char' 0 83 'nf_inq' 0 186 'nf_ebadid' 0 178 'nf_create' 0 96
+'nf_copy_att' 0 89 'nf_copy_var' 0 88 'nf_del_att' 0 95 'nf_def_var' 0
+91 'nf_def_dim' 0 90 'nf_ebaddim' 0 94 'nf_double' 0 93 'nf_delete' 0 92
+'nf_emaxname' 0 177 'nf_einval' 0 108 'nf_eindefine' 0 104 'nf_eexist' 0
+103 'nf_echar' 0 101 'nf_ebadtype' 0 98 'nf_ebadname' 0 97 'nf_edimsize'
+0 100 'nf_eedge' 0 99 'nf_eglobal' 0 102 'nf_emaxdims' 0 107 'nf_emaxatts'
+0 106 'nf_einvalcoords' 0 105 'nf_get_var1_int' 0 176 'nf_get_att_int1'
+0 146 'nf_fill_double' 0 141 'nf_etrunc' 0 129 'nf_enotindefine' 0 121
+'nf_enotatt' 0 114 'nf_enameinuse' 0 113 'nf_emaxvars' 0 109 'nf_enomem'
+0 112 'nf_enddef' 0 110 'nf_enorecvars' 0 111 'nf_enotnc' 0 120 'nf_eperm'
+0 119 'nf_enotvar' 0 115 'nf_estride' 0 118 'nf_erange' 0 116 'nf_ests'
+0 117 'nf_fill_byte' 0 128 'nf_fatal' 0 126 'nf_eunlimit' 0 124
+'nf_evarsize' 0 123 'nf_eunlimpos' 0 122 'nf_fill' 0 125 'nf_fill_char'
+0 127 'nf_fill_int' 0 140 'nf_fill_float' 0 130 'nf_get_att_double' 0
+139 'nf_format_64bit' 0 137 'nf_fill_short' 0 135 'nf_fill_int1' 0 133
+'nf_fill_int2' 0 132 'nf_fill_real' 0 131 'nf_float' 0 134
+'nf_format_classic' 0 136 'nf_get_att_int' 0 138 'nf_get_att_real' 0 145
+'nf_get_att_int2' 0 142 'nf_get_att_text' 0 144 'nf_get_var1_double' 0
+143 'nf_get_var1_int1' 0 175 'nf_get_vara_int2' 0 174 'nf_get_vara_double'
+0 158 'nf_get_var1_int2' 0 155 'nf_get_var_text' 0 154 'nf_get_var1_text'
+0 153 'nf_get_var1_real' 0 147 'nf_get_var_double' 0 152 'nf_get_var_int2'
+0 151 'nf_get_var_int' 0 149 'nf_get_var_int1' 0 148 'nf_get_var_real' 0
+150 'nf_get_vara_int1' 0 157 'nf_get_vara_int' 0 156 'nf_get_vars_real'
+0 173 'nf_get_varm_double' 0 170 'nf_get_vara_text' 0 160
+'nf_get_vara_real' 0 159 'nf_get_varm_int1' 0 169 'nf_get_varm_int' 0
+161 'nf_get_vars_int2' 0 168 'nf_get_vars_int1' 0 167 'nf_get_varm_text'
+0 166 'nf_get_varm_int2' 0 163 'nf_get_varm_real' 0 162
+'nf_get_vars_double' 0 165 'nf_get_vars_int' 0 164 'nf_global' 0 172
+'nf_get_vars_text' 0 171 'nf_inq_attlen' 0 185 'nf_inq_att' 0 180
+'nf_inq_attid' 0 179 'nf_inq_attname' 0 184 'nf_inq_base_pe' 0 183
+'nf_inq_atttype' 0 181 'nf_inq_dim' 0 182 'nf_inq_varndims' 0 256
+'nf_inq_dimlen' 0 203 'nf_inq_dimname' 0 202 'nf_inq_varnatts' 0 201
+'nf_inq_natts' 0 200 'nf_inq_libvers' 0 192 'nf_inq_format' 0 191
+'nf_inq_vardimid' 0 199 'nf_inq_nvars' 0 196 'nf_inq_ndims' 0 193
+'nf_inq_var' 0 195 'nf_inq_unlimdim' 0 194 'nf_inq_varname' 0 198
+'nf_inq_varid' 0 197 'nf_put_vars_int1' 0 255 'nf_put_varm_int' 0 251
+'nf_inq_vartype' 0 244 'nf_nofill' 0 243 'nf_int2' 0 215 'nf_int' 0 205
+'nf_int1' 0 204 'nf_max_dims' 0 214 'nf_issyserr' 0 208 'nf_lock' 0 207
+'nf_max_attrs' 0 206 'nf_noerr' 0 213 'nf_max_name' 0 212 'nf_max_vars'
+0 211 'nf_max_var_dims' 0 209 'nf_noclobber' 0 210 'nf_put_var1_double'
+0 242 'nf_nowrite' 0 223 'nf_put_att_int2' 0 222 'nf_put_att_int' 0 219
+'nf_open' 0 217 'nf_put_att_double' 0 216 'nf_put_att_int1' 0 218
+'nf_put_att_real' 0 221 'nf_put_att_text' 0 220 'nf_put_vara_text' 0 241
+'nf_put_var1_int' 0 239 'nf_put_var_real' 0 238 'nf_put_var1_int2' 0 231
+'nf_put_var1_int1' 0 224 'nf_put_var_int1' 0 230 'nf_put_var1_real' 0
+228 'nf_put_var_double' 0 227 'nf_put_var1_text' 0 225 'nf_put_var_int'
+0 226 'nf_put_var_int2' 0 229 'nf_put_var_text' 0 237 'nf_put_vara_double'
+0 236 'nf_put_vara_int1' 0 235 'nf_put_vara_int' 0 232 'nf_put_vara_real'
+0 234 'nf_put_vara_int2' 0 233 'nf_put_varm_double' 0 240
+'nf_put_varm_int2' 0 250 'nf_put_varm_int1' 0 245 'nf_put_varm_real' 0
+249 'nf_put_varm_text' 0 248 'nf_put_vars_double' 0 247 'nf_put_vars_int'
+0 246 'nf_put_vars_real' 0 254 'nf_put_vars_int2' 0 252 'nf_put_vars_text'
+0 253 'nf_redef' 0 259 'nf_rename_att' 0 258 'nf_sizehint_default' 0 292
+'nf_set_base_pe' 0 266 'nf_rename_var' 0 261 'nf_share' 0 265
+'nf_set_fill' 0 263 'nf_set_default_format' 0 262 'nf_short' 0 264
+'sample_atlas' 0 284 'nlon' 0 274 'nf_verbose' 0 272 'nf_sync' 0 269
+'nf_strerror' 0 267 'nf_unlimited' 0 268 'nf_write' 0 271 'nlat' 0 270
+'ntimes' 0 273 'temp' 0 283 'tstd' 0 282 'tempatlas' 0 275 'xy2ll' 0 276)

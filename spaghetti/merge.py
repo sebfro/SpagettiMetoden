@@ -1,0 +1,131 @@
+# --- encoding: iso-latin-1 ---
+
+from numpy import *
+from NetCDF import *
+
+# �Pne input filer
+
+
+#f1 = NetCDFFile('FW238.nc')
+#f2 = NetCDFFile('BW238.nc')
+#fout = NetCDFFile('M238.nc', 'w')
+
+
+#f1 = NetCDFFile('FW699.nc')
+#f2 = NetCDFFile('BW699.nc')
+#fout = NetCDFFile('M699.nc', 'w')
+
+#f1 = NetCDFFile('AA106FW.nc')
+#f2 = NetCDFFile('AA106BW.nc')
+#fout = NetCDFFile('AM106.nc', 'w')
+
+#f1 = NetCDFFile('AA044FW.nc')
+#f2 = NetCDFFile('AA044BW.nc')
+#fout = NetCDFFile('AA044.nc', 'w')
+
+f1 = NetCDFFile('A235FW.nc')
+f2 = NetCDFFile('A235BW.nc')
+#fout = NetCDFFile('AA235_notemp.nc', 'w')
+fout = NetCDFFile('AA235_temp.nc', 'w')
+#fout = NetCDFFile('A235.nc', 'w')
+
+
+
+
+rad = pi/180.0
+
+
+#Ntraj = 100000
+Ntraj = 10000
+
+
+
+
+T = f1.variables['time'][:]
+
+ttime = int(T[-1])
+print ("total time: ", ttime)
+
+
+
+#mday = 65
+#mday = 36 # halveis 699
+#mday = 32 # ta litt mindre pga assymetry
+
+#mday = 97  # Halve tiden, 742
+
+#mday = 127  # A106
+#mday = 156 # A044
+mday = 45  # A235
+
+FWlife = f1.variables['life'][mday+1,:]
+BWlife = f2.variables['life'][ttime-mday,:]
+
+X1 = f1.variables['X'][mday,:]
+Y1 = f1.variables['Y'][mday,:]
+
+X2 = f2.variables['X'][ttime-mday-1,:]
+Y2 = f2.variables['Y'][ttime-mday-1,:]
+
+
+
+# Lag output fil
+
+fout.createDimension('time', None)
+#fout.createDimension('fish', 1000)
+fout.createDimension('fish', 8000)
+
+fout.createVariable('time', 'd', ('time',))
+fout.createVariable('X', 'f', ('time', 'fish'))
+fout.createVariable('Y', 'f', ('time', 'fish'))
+fout.createVariable('P', 'i', ('fish',))  # Indeks i f�rste fil
+fout.createVariable('Q', 'i', ('fish',))  # indeks i andre fil
+
+
+for t in T:
+    it = int(t)
+    fout.variables['time'][it] = it
+
+
+# Hvor n�rt skal det v�re f�r match, pr�ver 1 km
+# lag litt statistikk p� avstand fra 1 dag til neste
+
+
+# Finn n�reste levende partikkelQ
+
+n = -1
+Q = zeros(Ntraj) - 1  # undef = -1
+for p in xrange(Ntraj):
+#for p in xrange(10000):
+    if FWlife[p]:
+        x, y = (X1[p], Y1[p])
+        lonfac = cos(y*rad)
+        D = lonfac*lonfac*(X2-x)*(X2-x) + (Y2-y)*(Y2-y)
+        D = where(BWlife, D, 1.0E32)
+        q = argmin(D)
+        Q[p] = q
+#        if sqrt(D[q])*1.852*60 < 20: # 699
+        if sqrt(D[q])*1.852*60 < 5:
+            n = n + 1
+            print (n, p, q, sqrt(D[q])*1.852*60)
+            fout.variables['X'][:mday+1, n] = f1.variables['X'][:mday+1, p]
+            X = f2.variables['X'][:,q]
+            fout.variables['X'][mday+1:, n] = X[mday::-1]
+            fout.variables['Y'][:mday+1, n] = f1.variables['Y'][:mday+1, p]
+            Y = f2.variables['Y'][:,q]
+            fout.variables['Y'][mday+1:, n] = Y[mday::-1]
+            fout.variables['P'][n] = p
+            fout.variables['Q'][n] = q
+            
+f1.close()
+f2.close()
+
+fout.nTrack = n
+        
+
+fout.close()        
+        
+
+
+            
+            

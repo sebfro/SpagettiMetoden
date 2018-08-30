@@ -1,0 +1,14 @@
+\BOOKMARK [0][-]{introduction.0}{Introduction}{}
+\BOOKMARK [0][-]{software-requirements.0}{Software requirements}{}
+\BOOKMARK [0][-]{directory-setup.0}{Directory setup}{}
+\BOOKMARK [0][-]{input-set-up.0}{Input set-up}{}
+\BOOKMARK [1][-]{tag-data.1}{Tag data}{input-set-up.0}
+\BOOKMARK [1][-]{sst-data.1}{SST data}{input-set-up.0}
+\BOOKMARK [1][-]{topography-data.1}{Topography data}{input-set-up.0}
+\BOOKMARK [0][-]{fortran-setup.0}{Fortran setup}{}
+\BOOKMARK [0][-]{set-up-file.0}{Set-up file}{}
+\BOOKMARK [0][-]{running-the-spaghetti-model.0}{Running the spaghetti model}{}
+\BOOKMARK [0][-]{output-format-from-spaghetti.0}{Output format from spaghetti}{}
+\BOOKMARK [0][-]{running-merge.0}{Running merge}{}
+\BOOKMARK [0][-]{output-format.0}{Output format}{}
+\BOOKMARK [0][-]{post-prosessing.0}{Post prosessing}{}

@@ -1,0 +1,41 @@
+2010-03-30
+
+# Standard kjøring
+
+FWSmooth.nc
+BWSmooth.nc
+mergeA.nc
+
+5 dagers glidende middel
+
+temp_lim = 1.2
+
+1.2*H + 30   # new
+1.1*H + 20   # old
+
+# ----------------------------
+
+Prøver sensitivitet:
+
+
+2010-04-23
+----------
+
+Fant ny bug i går. Fikset.
+Ny kjøring FWB.mega ...
+Brukte 1 million partikler
+
+
+2010-12-09
+----------
+
+La inn kommando-linje argument for setup-fil.
+Dette bruker Fortran 2003 standard funksjon
+command_argument_count()
+og subrutine
+get_command_argument
+
+Disse er implementert i gfortran for linux
+
+Hvis det mangler, finnes funksjonaliteten i fortran90-modulen
+F2KCLI som kan lastes ned fra  http://www.winteracter.com/f2kcli/

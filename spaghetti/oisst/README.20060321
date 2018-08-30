@@ -1,0 +1,12 @@
+The files for weeks 20051109 thru 20060315 were updated on March 20 2006.  
+A correction was made to the ice field only.  Values of 0 over land have 
+been corrected to 122 (the land flag).  SST values and error estimate 
+remain unchanged.   The ice concentration over water also remains 
+unchanged.
+
+
+At the same time, the index (version number) in the header for weeks 
+20050126 thru 20050824 has been corrected.  No data values were changed 
+for these weeks.
+
+

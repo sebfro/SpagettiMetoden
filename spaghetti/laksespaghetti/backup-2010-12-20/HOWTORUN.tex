@@ -1,0 +1,466 @@
+\documentclass[10pt,a4paper,english]{article}
+\usepackage{babel}
+\usepackage{ae}
+\usepackage{aeguill}
+\usepackage{shortvrb}
+\usepackage[latin1]{inputenc}
+\usepackage{tabularx}
+\usepackage{longtable}
+\setlength{\extrarowheight}{2pt}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{ifthen}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+\usepackage[DIV12]{typearea}
+%% generator Docutils: http://docutils.sourceforge.net/
+\newlength{\admonitionwidth}
+\setlength{\admonitionwidth}{0.9\textwidth}
+\newlength{\docinfowidth}
+\setlength{\docinfowidth}{0.9\textwidth}
+\newlength{\locallinewidth}
+\newcommand{\optionlistlabel}[1]{\bf #1 \hfill}
+\newenvironment{optionlist}[1]
+{\begin{list}{}
+  {\setlength{\labelwidth}{#1}
+   \setlength{\rightmargin}{1cm}
+   \setlength{\leftmargin}{\rightmargin}
+   \addtolength{\leftmargin}{\labelwidth}
+   \addtolength{\leftmargin}{\labelsep}
+   \renewcommand{\makelabel}{\optionlistlabel}}
+}{\end{list}}
+\newlength{\lineblockindentation}
+\setlength{\lineblockindentation}{2.5em}
+\newenvironment{lineblock}[1]
+{\begin{list}{}
+  {\setlength{\partopsep}{\parskip}
+   \addtolength{\partopsep}{\baselineskip}
+   \topsep0pt\itemsep0.15\baselineskip\parsep0pt
+   \leftmargin#1}
+ \raggedright}
+{\end{list}}
+% begin: floats for footnotes tweaking.
+\setlength{\floatsep}{0.5em}
+\setlength{\textfloatsep}{\fill}
+\addtolength{\textfloatsep}{3em}
+\renewcommand{\textfraction}{0.5}
+\renewcommand{\topfraction}{0.5}
+\renewcommand{\bottomfraction}{0.5}
+\setcounter{totalnumber}{50}
+\setcounter{topnumber}{50}
+\setcounter{bottomnumber}{50}
+% end floats for footnotes
+% some commands, that could be overwritten in the style file.
+\newcommand{\rubric}[1]{\subsection*{~\hfill {\it #1} \hfill ~}}
+\newcommand{\titlereference}[1]{\textsl{#1}}
+% end of "some commands"
+\title{How to run spaghetti on a Linux system}
+\author{}
+\date{}
+\hypersetup{
+pdftitle={How to run spaghetti on a Linux system},
+pdfauthor={Bjørn Ådlandsvik}
+}
+\raggedbottom
+\begin{document}
+\maketitle
+
+%___________________________________________________________________________
+\begin{center}
+\begin{tabularx}{\docinfowidth}{lX}
+\textbf{Author}: &
+	Bjørn Ådlandsvik \\
+\textbf{Date}: &
+	2010-08-03 \\
+\end{tabularx}
+\end{center}
+
+\setlength{\locallinewidth}{\linewidth}
+
+
+%___________________________________________________________________________
+
+\hypertarget{introduction}{}
+\pdfbookmark[0]{Introduction}{introduction}
+\section*{Introduction}
+
+This document describes how to run the spaghetti system for
+geolocation of fish tags. It focus on how to set up and run the
+system for geolocation of salmon from northern Norway.
+
+The system (for cod in the Barents Sea) is described scientifically in:
+\begin{quote}{\ttfamily \raggedright \noindent
+B.~Ådlandsvik,~G.~Huse~and~K.~Michalsen,~2007,~\\
+Introducing~a~method~for~extracting~horizontal~migration~patterns~\\
+from~data~storage~tags,~\\
+Hydrobiologia,~582,~187{--}197.
+}\end{quote}
+
+
+%___________________________________________________________________________
+
+\hypertarget{software-requirements}{}
+\pdfbookmark[0]{Software requirements}{software-requirements}
+\section*{Software requirements}
+\begin{itemize}
+\item {} 
+Fortran 90 compiler (free gfortran from GNU works nicely)
+
+\item {} 
+NetCDF library for Fortran
+
+\item {} 
+python
+
+\item {} 
+numpy
+
+\item {} 
+netCDF for python (preferably netcdf4-python)
+
+\end{itemize}
+
+The first four are typically available as packages for a Linux
+distribution. The netcdf4-python is a bit more tricky to install.
+Other netcdf libraries for python can be used instead with only
+minor modifications.
+
+For postprosessing with python, the matplotlib library is recommended.
+Other tools such as Matlab can be used instead.
+
+
+%___________________________________________________________________________
+
+\hypertarget{directory-setup}{}
+\pdfbookmark[0]{Directory setup}{directory-setup}
+\section*{Directory setup}
+
+I setup a main directory for running the system.
+The fortran code is put into a subdirectory called ``fortran''.
+The input data: tag, temperature, topography is placed in a
+subdirectory called ``input''.
+The merging program, merge.py, is put into the main directory.
+
+
+%___________________________________________________________________________
+
+\hypertarget{input-set-up}{}
+\pdfbookmark[0]{Input set-up}{input-set-up}
+\section*{Input set-up}
+
+This describes the input needed for running the model for tracking
+salmon in norther Norway.
+
+
+%___________________________________________________________________________
+
+\hypertarget{tag-data}{}
+\pdfbookmark[1]{Tag data}{tag-data}
+\subsection*{Tag data}
+
+Text file with 4 columns:
+date, time, sea surface temperature, max depth
+Data are hourly,
+SST is mean of surface obs. during that hour
+or 9999.00 if not at surface, and
+max depth is maximum depth recorded during the hour
+
+Ole Petter has a Matlab script that produces this
+format.
+Python script ``smooth.py'' in input directory can
+be used to smooth the temperature data, produces a new
+file with the same format.
+
+Format example:
+\begin{quote}{\ttfamily \raggedright \noindent
+2008-05-26~20:00:00~~~~~5.02~~~10.76~\\
+2008-05-26~21:00:00~~~~~6.04~~~~0.00~\\
+2008-05-26~22:00:00~~~~~6.04~~~~0.00~\\
+2008-05-26~23:00:00~~~~~6.15~~~~5.38~\\
+2008-05-27~00:00:00~~9999.00~~~10.76~\\
+2008-05-27~01:00:00~~~~~5.83~~~16.14~\\
+2008-05-27~02:00:00~~~~~5.83~~~16.14
+}\end{quote}
+
+
+%___________________________________________________________________________
+
+\hypertarget{sst-data}{}
+\pdfbookmark[1]{SST data}{sst-data}
+\subsection*{SST data}
+
+Have a file oisst{\_}2008.nc per year.
+This file is in netcdf format created by python script sst2nc.
+Data fra
+``NOAA Optimum Interpolation (OI) Sea Surface Temperature
+(SST) V2''
+\href{http://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.html}{http://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.html}
+
+
+%___________________________________________________________________________
+
+\hypertarget{topography-data}{}
+\pdfbookmark[1]{Topography data}{topography-data}
+\subsection*{Topography data}
+
+From a single column data file, etopo2{\_}codyssey.dat
+With etopo2-data covering the Barents Sea
+
+
+%___________________________________________________________________________
+
+\hypertarget{fortran-setup}{}
+\pdfbookmark[0]{Fortran setup}{fortran-setup}
+\section*{Fortran setup}
+
+There are different fortran-modules matching the input,
+\begin{itemize}
+\item {} 
+sst{\_}module in sst.f90
+
+\item {} 
+topography in topo.f90
+
+\item {} 
+tagdata    in tagdata.f90
+
+\end{itemize}
+
+These modules are meant to meatch the input format,
+and are likely to be changed if the model is to be
+used for something different than salmon in northern Norway.
+
+The main module to be changed is the position module
+found in the source file position.f90
+
+Parameters that may be changed:
+\begin{description}
+%[visit_definition_list_item]
+\item[{nFish}] %[visit_definition]
+
+Number of trajectories
+
+%[depart_definition]
+%[depart_definition_list_item]
+%[visit_definition_list_item]
+\item[{randspeed}] %[visit_definition]
+
+Random speed, the ``noice'' in the trajectories
+
+%[depart_definition]
+%[depart_definition_list_item]
+\end{description}
+
+Limiter works by termination if {\textbar} sst{\_}oisst - sst{\_}tag {\textbar} {\textgreater} temp{\_}lim, or
+depth{\_}tag {\textgreater} dfac*depth{\_}etopo + add{\_}depth
+
+NOTE: Sometimes these test are overruled by the code,
+which is the ultimate guide to what is being done.
+
+After modification of position.f90,
+type ``make'' and copy the executable file ``spaghetti''
+to the mother directory
+
+
+%___________________________________________________________________________
+
+\hypertarget{set-up-file}{}
+\pdfbookmark[0]{Set-up file}{set-up-file}
+\section*{Set-up file}
+
+The model run is governed by a set-up file,
+spaghetti.sup in the main directory
+Presently it contains:
+\begin{itemize}
+\item {} 
+start time and position
+
+\item {} 
+end time and position
+
+\item {} 
+name of tag file
+
+\item {} 
+name of output fules
+
+\item {} 
+depth factor
+
+\item {} 
+additiv depth contibution
+
+\item {} 
+temperature error tolerance
+
+\item {} 
+input time step
+
+\item {} 
+output time step
+
+\end{itemize}
+
+When performing several model experiments it can be
+useful to make a separate set-up fil, for instance
+``caseA.sup'' to document the settings.
+A link can be used to give the information to the
+spaghetti-program:
+\begin{quote}{\ttfamily \raggedright \noindent
+ln~-sf~caseA.sup~spaghetti.sup
+}\end{quote}
+
+
+%___________________________________________________________________________
+
+\hypertarget{running-the-spaghetti-model}{}
+\pdfbookmark[0]{Running the spaghetti model}{running-the-spaghetti-model}
+\section*{Running the spaghetti model}
+
+The spaghetti executable runs first the forward and
+thereafter the backwards trajectories.
+It is run by typing ``spaghetti'' in the main directory.
+
+When running it displays the number of surviving trajectories
+\begin{quote}{\ttfamily \raggedright \noindent
+...~\\
+daynr,~{\#}fish~=~~~~~~~~~~~28~~~~~~126201~\\
+daynr,~{\#}fish~=~~~~~~~~~~~29~~~~~~123315~\\
+...
+}\end{quote}
+
+This way one can keep track of how far it has been running
+and if the trajectories are becoming extinct. The number
+of trajectories half time, when they are to be merged with
+the opposite trajectories, is the most important.
+
+
+%___________________________________________________________________________
+
+\hypertarget{output-format-from-spaghetti}{}
+\pdfbookmark[0]{Output format from spaghetti}{output-format-from-spaghetti}
+\section*{Output format from spaghetti}
+
+The spaghetti program makes two netcdf-files,
+one for the forwards and one for the backwards trajectories.
+The files can be large, with many dead tracks.
+The files are temporary, meant to be used by the merge program
+and can be deleted afterwards.
+The files can however be used for finer study of why and when
+tracks are terminated.
+
+The format as reported by ncdump:
+\begin{quote}{\ttfamily \raggedright \noindent
+dimensions:~\\
+~~~~~~time~=~UNLIMITED~;~//~(179~currently)~\\
+~~~~~~fish~=~200000~;~\\
+variables:~\\
+~~~~~~float~time(time)~;~\\
+~~~~~~~~~~~~~~time:long{\_}name~=~"time"~;~\\
+~~~~~~~~~~~~~~time:units~=~"days~since~2008-05-27"~;~\\
+~~~~~~float~X(time,~fish)~;~\\
+~~~~~~~~~~~~~~X:long{\_}name~=~"Longitude"~;~\\
+~~~~~~~~~~~~~~X:units~=~"degrees~east"~;~\\
+~~~~~~float~Y(time,~fish)~;~\\
+~~~~~~~~~~~~~~Y:long{\_}name~=~"Latitude"~;~\\
+~~~~~~~~~~~~~~Y:units~=~"degrees~north"~;~\\
+~~~~~~int~life(time,~fish)~;~\\
+~~~~~~~~~~~~~~life:long{\_}name~=~"Flag~for~active~trajectory"~;~\\
+~\\
+//~global~attributes:~\\
+~~~~~~~~~~~~~~:type~=~"Spaghetti~forward~~output~file"~;
+}\end{quote}
+
+
+%___________________________________________________________________________
+
+\hypertarget{running-merge}{}
+\pdfbookmark[0]{Running merge}{running-merge}
+\section*{Running merge}
+
+Merge is run by typing:
+\begin{quote}{\ttfamily \raggedright \noindent
+python~merge3.py~{[}setup{\_}file{]}
+}\end{quote}
+
+at the command line in the main directory. It should not be
+necessary to change anything in the program code it should use a
+setup-file of the same type as the spaghetti run. If no setup file
+is given as a command line argument, the default ``spaghetti.sup''
+is used.
+
+
+%___________________________________________________________________________
+
+\hypertarget{output-format}{}
+\pdfbookmark[0]{Output format}{output-format}
+\section*{Output format}
+
+The output from the merge script is a NetCDF file, mergeA.nc in the
+example above. The structure is quite simple as shown by \titlereference{ncdump -h}:
+\begin{quote}{\ttfamily \raggedright \noindent
+dimensions:~\\
+~~~~~~time~=~179~;~\\
+~~~~~~tracknr~=~1654~;~\\
+variables:~\\
+~~~~~~double~time(time)~;~\\
+~~~~~~~~~~~~~~time:long{\_}name~=~"time"~;~\\
+~~~~~~~~~~~~~~time:units~=~"days~since~2008-05-27"~;~\\
+~~~~~~float~lon(time,~tracknr)~;~\\
+~~~~~~~~~~~~~~lon:long{\_}name~=~"longitude"~;~\\
+~~~~~~~~~~~~~~lon:units~=~"degrees{\_}east"~;~\\
+~~~~~~float~lat(time,~tracknr)~;~\\
+~~~~~~~~~~~~~~lat:long{\_}name~=~"latitude"~;~\\
+~~~~~~~~~~~~~~lat:units~=~"degrees{\_}north"~;~\\
+~~~~~~int~p(tracknr)~;~\\
+~~~~~~~~~~~~~~p:long{\_}name~=~"Forward~index"~;~\\
+~~~~~~int~q(tracknr)~;~\\
+~~~~~~~~~~~~~~q:long{\_}name~=~"Backward~index"~;~\\
+~\\
+//~global~attributes:~\\
+~~~~~~~~~~~~~~:Conventions~=~"CF-1.0"~;~\\
+~~~~~~~~~~~~~~:institution~=~"Institute~of~Marine~Research"~;~\\
+~~~~~~~~~~~~~~:source~=~"The~spaghetti~geolocation~model~by~Bjørn~Ådlandsvik,~IMR"~;~\\
+~~~~~~~~~~~~~~:history~=~"created~2010-08-04~by~merge2.py~from~FWA.nc~and~BWA.nc"~;
+}\end{quote}
+
+It has 179 time steps (days) and 1654 trajectories. The positions are
+given in the lon/lat arrays while p and q gives the forward and
+backwards track numbers for the merged track.
+
+
+%___________________________________________________________________________
+
+\hypertarget{post-prosessing}{}
+\pdfbookmark[0]{Post prosessing}{post-prosessing}
+\section*{Post prosessing}
+
+The model results can be examined with any software that can read
+netCDF. For instance plotting the first tracks (but not more than 100)
+can be done by
+\begin{quote}{\ttfamily \raggedright \noindent
+import~matplotlib~as~plt~\\
+from~netCDF4~import~Dataset~\\
+~\\
+...~\\
+~\\
+{\#}~Read~the~tracks~\\
+f~=~Dataset('mergeA.nc')~\\
+N~=~min(f.nTrack,~100)~~~{\#}~at~most~100~tracks~\\
+X~=~f.variables('lon'){[}:,:N{]}~\\
+Y~=~f.variables('lat'){[}:,:N{]}~\\
+~\\
+...~\\
+~\\
+{\#}~Plot~the~tracks~\\
+for~i~in~xrange(N):~\\
+~~~~plt.plot(X{[}:,i{]},~Y{[}:,i{]},~color='blue')~\\
+~\\
+plt.show()
+}\end{quote}
+
+A more elaborate version plotting coast, bathymetry and mean
+trajectory is given as plotbane2.py in the main directory
+
+\end{document}
