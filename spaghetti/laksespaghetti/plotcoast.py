@@ -25,7 +25,7 @@ lat = np.arange(lat0, lat1+dlat, dlat)
 # ---------------------
 
 # Plot coast data
-for i in xrange(len(S)-1):
+for i in range(len(S)-1):
     plt.fill(Xcoast[S[i]:S[i+1]], Ycoast[S[i]:S[i+1]], facecolor=(0.2,0.8,0.2))
 
 
